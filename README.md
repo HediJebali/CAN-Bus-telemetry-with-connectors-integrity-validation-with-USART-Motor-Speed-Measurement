@@ -64,7 +64,8 @@ Where:
 
 ---
 ## Results of speed transferring using CAN1 Loopback and USART2 between PC and STM32F446RE (Hterm interface software):
-<img width="1920" height="1080" alt="hterm0" src="https://github.com/user-attachments/assets/97032bb8-85fd-4c15-b29a-2bf2c333b5e1" />
+
+<img width="1920" height="1007" alt="before interrupt" src="https://github.com/user-attachments/assets/def1c80d-d46c-432f-9817-82cf074a0faf" />
 
 ## Results After EXTI13 interrupt with PC13 user button (to see connectors validation test results in Hterm interface software) :
 
