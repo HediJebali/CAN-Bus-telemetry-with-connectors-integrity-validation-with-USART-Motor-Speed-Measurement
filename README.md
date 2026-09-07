@@ -45,17 +45,13 @@ The primary core of this embedded node runs on an **STM32F446RE** microcontrolle
 ## Mathematical Formulas
 
 ### 1. Speed Calculation
-$$\text{Speed (RPM)} = \frac{\text{Pulse Count} \times 60}{\text{ENCODER\_SLOTS}}$$
-
 Where:
 * **Pulse Count:** Number of pulses detected by the HW-006 sensor in 1 second.
 * **ENCODER_SLOTS:** Number of physical slots on the encoder wheel.
 <img width="1164" height="672" alt="Motor Speed Equation" src="https://github.com/user-attachments/assets/fc7f8343-ae6d-4ed3-aa3c-c25ffe237adf" />
 
 ### 2. Baud Rate Register (BRR) for USART2 @ 16 MHz (115200 Bps)
-$$\text{USARTDIV} = \frac{16\,000\,000}{16 \times 115200} = 8.68055$$
-$$\text{DIV\_Mantissa} = 8 = \text{0x8}, \quad \text{DIV\_Fraction} = \text{round}(16 \times 0.68055) = 11 = \text{0xB}$$
-$$\text{BRR} = (0\text{x}8 \ll 4) \mid 0\text{xB} = \mathbf{0\text{x}8\text{B}}$$
+
 <img width="1920" height="1080" alt="BRR register equation" src="https://github.com/user-attachments/assets/15de2ec1-48bd-45df-9c1c-879761f13123" />
 
 ---
