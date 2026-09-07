@@ -41,40 +41,12 @@ The primary core of this embedded node runs on an **STM32F446RE** microcontrolle
 | **PB9** | Siemens PLC Input Module (`%I0.3`) | 1 Hz Square-Wave Timebase Pulse (1s Toggle) |
 
 ---
-## Full System Wiring Schematics
+## Full System Wiring Schematics                               
+
+
+                                  [ EMBEDDED NODE & INDUSTRIAL NETWORK ARCHITECTURE ]
+
 <img width="1920" height="1080" alt="Wiring" src="https://github.com/user-attachments/assets/23814612-4b53-402c-bdf0-d46f02777e89" />
-
-                               [ EMBEDDED NODE & INDUSTRIAL NETWORK ARCHITECTURE ]
-
-  +-----------------------------------+
-  |  STM32F446RE Microcontroller      |
-  |                                   |             +-------------------+              +------------------------------+
-  |  PA12 (CAN1_TX) ------------------|------------>| SN65HVD230        |              |  PROFINET / CAN Gateway      |
-  |  PA11 (CAN1_RX) <-----------------|-------------| Transceiver       |              |  (e.g., Anybus / Helmholz)   |
-  |  3V3 & GND -----------------------|------------>| VCC & GND         |              |                              |
-  |                                   |             |                   |              |                              |
-  |                                   |             | CAN_H ------------|==============| CAN_H                        |
-  |                                   |             |    [120 Ω Term]   |  CAN Bus     |                              |
-  |                                   |             | CAN_L ------------|==============| CAN_L                        |
-  |                                   |             +-------------------+              |                   [RJ45 Port]|
-  |                                   |                                                +------------------------------+
-  |  PB9 (1Hz Square Wave) -----------|---------------------------------+                             ||
-  |                                   |                                 |                             || PROFINET
-  |  PA2 / PA3 (USART2) --------------|---> [ST-LINK USB] -> PC/HTerm   |                             || (Industrial Ethernet)
-  |                                   |                                 v                             ||
-  |  PB0 (Sensor In) <----------------|--- [HW-006 Optical Sensor]  +--------------------------------------------------------+
-  |  PB1..PB4 / PB5..PB8 -------------|<-> [Connector Harness]      |  Siemens S7-300 PLC (CPU 314C-2 PN/DP)                 |
-  +-----------------------------------+                             |                                                        |
-                                                                    |  - %I0.3 Digital Input <--- (PB9 Pulse Signal)         |
-                                                                    |  - PROFINET Port       <--- (Mapped to %IW800)         |
-                                                                    |                                                        |
-                                                                    |  [ Internal Logic / Ladder ]                           |
-                                                                    |  1. MOVE (%IW800 -> %DB2.DBW0) -> Sent to HMI         |
-                                                                    |  2. P_TRIG (%I0.3) -> CTU (PV=14400) -> Auto Stop      |
-                                                                    |  3. Main GRAFCET Sequence (Motor, Green/Red LEDs)      |
-                                                                    +--------------------------------------------------------+
-
-
 
 ## Mathematical Formulas
 
