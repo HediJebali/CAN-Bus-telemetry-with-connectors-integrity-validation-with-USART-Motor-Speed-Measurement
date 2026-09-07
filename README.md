@@ -41,21 +41,6 @@ The primary core of this embedded node runs on an **STM32F446RE** microcontrolle
 | **PB9** | Siemens PLC Input Module (`%I0.3`) | 1 Hz Square-Wave Timebase Pulse (1s Toggle) |
 
 ---
-
-## Mathematical Formulas
-
-### 1. Speed Calculation
-Where:
-* **Pulse Count:** Number of pulses detected by the HW-006 sensor in 1 second.
-* **ENCODER_SLOTS:** Number of physical slots on the encoder wheel.
-<img width="1164" height="672" alt="Motor Speed Equation" src="https://github.com/user-attachments/assets/fc7f8343-ae6d-4ed3-aa3c-c25ffe237adf" />
-
-### 2. Baud Rate Register (BRR) for USART2 @ 16 MHz (115200 Bps)
-
-<img width="1920" height="1080" alt="BRR register equation" src="https://github.com/user-attachments/assets/15de2ec1-48bd-45df-9c1c-879761f13123" />
-
----
-
 ## Full System Wiring Schematics
 <img width="1920" height="1080" alt="Wiring" src="https://github.com/user-attachments/assets/23814612-4b53-402c-bdf0-d46f02777e89" />
 
@@ -89,3 +74,16 @@ Where:
                                                                     |  2. P_TRIG (%I0.3) -> CTU (PV=14400) -> Auto Stop      |
                                                                     |  3. Main GRAFCET Sequence (Motor, Green/Red LEDs)      |
                                                                     +--------------------------------------------------------+
+## Mathematical Formulas
+
+### 1. Speed Calculation
+Where:
+* **Pulse Count:** Number of pulses detected by the HW-006 sensor in 1 second.
+* **ENCODER_SLOTS:** Number of physical slots on the encoder wheel.
+<img width="1164" height="672" alt="Motor Speed Equation" src="https://github.com/user-attachments/assets/fc7f8343-ae6d-4ed3-aa3c-c25ffe237adf" />
+
+### 2. Baud Rate Register (BRR) for USART2 @ 16 MHz (115200 Bps)
+
+<img width="1920" height="1080" alt="BRR register equation" src="https://github.com/user-attachments/assets/15de2ec1-48bd-45df-9c1c-879761f13123" />
+
+---
