@@ -1,4 +1,4 @@
-# Project: CAN Bus telemetry with connectors integrity validation with USART & Motor Speed Measurement using optical sensor
+# Project: Interrupt-driven CAN Bus telemetry with connectors integrity validation with USART & Motor Speed Measurement using optical sensor
 
 An industrial bare-metal C (CMSIS) firmware developed for the **STM32F446RE** ARM Cortex-M4 microcontroller. The system performs high-precision motor speed acquisition via an **HW-006 optical sensor**, streams real-time telemetry across **USART2** and an industrial **CAN Bus**, executes multi-pin connector integrity diagnostics, and feeds a **Siemens S7-300 PLC** system for automated safety monitoring and HMI visualization.
 
@@ -61,3 +61,10 @@ Where:
 <img width="1920" height="1080" alt="BRR register equation" src="https://github.com/user-attachments/assets/15de2ec1-48bd-45df-9c1c-879761f13123" />
 
 ---
+## Results of speed transferring using CAN1 Loopback and USART2 between PC and STM32F446RE (Hterm interface software):
+<img width="1920" height="1080" alt="Simulation hterm after adding CAN1 LOOPBACK" src="https://github.com/user-attachments/assets/0f9a0a6d-bba4-49d7-8e66-686527a066a2" />
+<img width="1572" height="1205" alt="picture2" src="https://github.com/user-attachments/assets/1fa3664e-ad3c-4587-b16b-655342a29f32" />
+<img width="1600" height="1025" alt="picture1" src="https://github.com/user-attachments/assets/16f400c7-bcbc-4637-84fe-026ae018c645" />
+
+## After EXTI13 interrupt with PC13 user button to see connectors validation test results in Hterm interface software :
+
