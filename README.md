@@ -44,7 +44,6 @@ The primary core of this embedded node runs on an **STM32F446RE** microcontrolle
 ## Full System Wiring Schematics
 <img width="1920" height="1080" alt="Wiring" src="https://github.com/user-attachments/assets/23814612-4b53-402c-bdf0-d46f02777e89" />
 
-```text
                                [ EMBEDDED NODE & INDUSTRIAL NETWORK ARCHITECTURE ]
 
   +-----------------------------------+
@@ -74,6 +73,9 @@ The primary core of this embedded node runs on an **STM32F446RE** microcontrolle
                                                                     |  2. P_TRIG (%I0.3) -> CTU (PV=14400) -> Auto Stop      |
                                                                     |  3. Main GRAFCET Sequence (Motor, Green/Red LEDs)      |
                                                                     +--------------------------------------------------------+
+
+
+
 ## Mathematical Formulas
 
 ### 1. Speed Calculation
