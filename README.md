@@ -65,6 +65,7 @@ Where:
 <img width="1920" height="1080" alt="Simulation hterm after adding CAN1 LOOPBACK" src="https://github.com/user-attachments/assets/0f9a0a6d-bba4-49d7-8e66-686527a066a2" />
 <img width="1572" height="1205" alt="picture2" src="https://github.com/user-attachments/assets/1fa3664e-ad3c-4587-b16b-655342a29f32" />
 <img width="1600" height="1025" alt="picture1" src="https://github.com/user-attachments/assets/16f400c7-bcbc-4637-84fe-026ae018c645" />
+<img width="1600" height="1428" alt="8" src="https://github.com/user-attachments/assets/353a459f-3844-45d2-a1f1-60fb7cb4a539" />
 
 ## After EXTI13 interrupt with PC13 user button to see connectors validation test results in Hterm interface software :
 
