@@ -51,12 +51,12 @@ The primary core of this embedded node runs on an **STM32F446RE** microcontrolle
 <img width="1600" height="1428" alt="8" src="https://github.com/user-attachments/assets/523aa44a-cf80-4527-84d2-f5145a3351bd" />
 
 ## Results of speed transferring using CAN1 Loopback and USART2 between PC and STM32F446RE (Hterm interface software):
+<img width="691" height="830" alt="647292968-def1c80d-d46c-432f-9817-82cf074a0faf" src="https://github.com/user-attachments/assets/2165d2cd-8367-4bd0-b42e-2af65830e106" />
 
-<img width="1920" height="1007" alt="before interrupt" src="https://github.com/user-attachments/assets/def1c80d-d46c-432f-9817-82cf074a0faf" />
 
 ## Results After EXTI13 interrupt with PC13 user button (to see connectors validation test results in Hterm interface software) :
 
-<img width="1920" height="1080" alt="after interrupt" src="https://github.com/user-attachments/assets/16d7dc32-1b3b-4ae1-85d8-3ef6c31af27f" />
+<img width="681" height="929" alt="647291022-16d7dc32-1b3b-4ae1-85d8-3ef6c31af27f" src="https://github.com/user-attachments/assets/6f08c6b6-ddbf-43f4-b023-54ce4c3dc794" />
 
 ## Mathematical Formulas
 
