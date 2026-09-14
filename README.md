@@ -1,4 +1,4 @@
-# Project: Interrupt-driven CAN Bus telemetry with connectors integrity validation with USART & Motor Speed Measurement using optical sensor
+# Project: Interrupt-driven CAN Bus telemetry with connectors integrity validation with USART & Motor Speed Measurement using optical sensor.
 
 An industrial bare-metal C (CMSIS) firmware developed for the **STM32F446RE** ARM Cortex-M4 microcontroller. The system performs high-precision motor speed acquisition via an **HW-006 optical sensor**, streams real-time telemetry across **USART2** and an industrial **CAN Bus**, executes multi-pin connector integrity diagnostics, and feeds a **Siemens S7-300 PLC** system for automated safety monitoring and HMI visualization.
 
